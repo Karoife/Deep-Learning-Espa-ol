@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Amber Jain (http://amberj.devio.us/) %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,14pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[fontsize=11pt]{fontsize}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[labelsep=space]{caption}
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage[bottom=6.5em]{geometry}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\usepackage{booktabs}
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+\setlength{\parindent}{12pt}
+\pagestyle{fancy}
+
+\renewcommand{\spanishcontentsname}{Contenidos}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\usepackage{graphicx}
+%\usepackage[english]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 'dedication' environment: To add a dedication paragraph at the start of book %
+% Source: http://www.tug.org/pipermail/texhax/2010-June/015184.html            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter
+%\renewcommand{\@chapapp}{}% Not necessary...
+%\newenvironment{chapquote}[2][2em]
+%  {\setlength{\@tempdima}{#1}%
+%   \def\chapquote@author{#2}%
+%   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+%   \itshape}
+%  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}}
+%\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Book's title and subtitle
+\title{Aprendizaje Profundo }
+% Author
+\author{Ian Goodfellow}
+
+
+\begin{document}
+
+
+
+
+\maketitle
+\addtocounter{page}{-1}
+\frontmatter
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\chapter{Sitio Web}
+\vspace{5pt}
+\begin{center}
+    \href{https://www.deeplearningbook.org/}{www.deeplearningbook.org}
+\end{center}
+\vspace{20pt}
+Este libro está acompañado del sitio web que se muestra arriba. El sitio web provee de una variedad de material suplementario, incluyendo ejercicios, diapositivas de conferencias, corrección de errores, y otros recursos que debería se útiles para el lector y el instructor.
+
+\chapter{Agradecimientos}
+Este libro no hubiese sido posible sin las contribución de muchas personas. \\
+Nosotros quisiéramos agradecer a quienes comentaron en nuestra propuesta para el libro y ayudaron a planificar su contenido y organización: Guillaume Alain, Kyunghyun Cho, Çağlar Gülçehre, David Krueger, Hugo Larochelle, Razvan Pascanu y Thomas
+Rohée.
+Nos encantaría agradecer a las personas que ofrecieron un retroalimentación sobre el contenido del libro en sí. Algunos que ofrecieron retroalimentación en muchos capitulos: Martín Abadi, Guillaume Alain, Ion Androutsopoulos, Fred Bertsch, Olexa Bilaniuk, Ufuk Can Biçici, Matko Bošnjak, John Boersma, Greg Brockman, Alexandre de Brébisson, Pierre Luc Carrier, Sarath Chandar, Pawel Chilinski, Mark Daoust, Oleg Dashevskii, Laurent Dinh, Stephan Dreseitl, Jim Fan, Miao Fan, Meire Fortunato, Frédéric Francis, Nando de Freitas, Çağlar Gülçehre, Jurgen Van Gael, Javier Alonso García, Jonathan Hunt, Gopi Jeyaram, Chingiz Kabytayev, Lukasz Kaiser, Varun Kanade, Akiel Khan, John King, Diederik P. Kingma, Yann LeCun, Rudolf Mathey, Matías
+Mattamala, Abhinav Maurya, Kevin Murphy, Oleg Mürk, Roman Novak, Augustus Q. Odena, Simon Pavlik, Karl Pichotta, Kari Pulli, Roussel Rahman, Tapani Raiko, Anurag Ranjan, Johannes Roith, Mihaela Rosca, Halis Sak, César Salgado, Grigory
+Sapunov, Yoshinori Sasaki, Mike Schuster, Julian Serban, Nir Shabat, Ken Shirriff, Andre Simpelo, Scott Stanley, David Sussillo, Ilya Sutskever, Carles Gelada Sáez, Graham Taylor, Valentin Tolmer, An Tran, Shubhendu Trivedi, Alexey Umnov,
+Vincent Vanhoucke, Marco Visentini-Scarzanella, David Warde-Farley, Dustin Webb, Kelvin Xu, Wei Xue, Ke Yang, Li Yao, Zygmunt Zając and Ozan Çağlayan.\\
+Además quisieramos agradecer a esos quienes provieron con una retroalimentación util por capitulo individual:
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\input{chapters/notacion}
+
+\mainmatter
+
+\input{chapters/introduccion}
+
+
+\bibliographystyle{apalike}
+\bibliography{referencias.bib}
+
+
+
+\end{document}
